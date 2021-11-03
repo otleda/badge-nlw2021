@@ -1,0 +1,42 @@
+/* RESET */
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #202024;
+}
+body::after {
+    position: absolute;
+    content: '';
+    width: 1000px;
+    height: 1000px;
+    bottom: 72%;
+    right: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, #FF3D6E 0%, rgba(18, 18, 20, 0) 100%);
+}
+body::before {
+    position: absolute;
+    content: '';
+    width: 1000px;
+    height: 1000px;
+    bottom: 72%;
+    left: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, #FFC323 0%, rgba(18, 18, 20, 0) 100%);
+}
+
+
+img { width: 100px;}
+
+.card {
+    display: flex;
+    width:358px;
+    height: 540px;
+    background-color: aliceblue;
+}
