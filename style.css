@@ -23,6 +23,8 @@ body {
     height: 100vh;
     font-family: 'Roboto', sans-serif;
 }
+
+/* Efect light circle pink */
 body::after {
     position: absolute;
     content: '';
@@ -32,6 +34,7 @@ body::after {
     right: 50%;
     background: radial-gradient(50% 50% at 50% 50%, #FF3D6E 0%, rgba(18, 18, 20, 0) 100%);
 }
+/* Efect light circle yellow */
 body::before {
     position: absolute;
     content: '';
@@ -57,7 +60,8 @@ body::before {
     border-radius: 1em;
     background-color: #202024;
     }
-    .card p {
+
+    main.card p {
         padding: 0 5em;
         font-style: oblique;
     }
@@ -86,17 +90,17 @@ body::before {
                 margin-right: .5em;
             }
 
-        .networks {
+        .networksLinks {
             display: flex;
             align-items: center;
             align-items: center;
             justify-content: center;
             padding: 2em;
         }
-            .networks a {
+            .networksLinks a {
                 padding: .2em;
             }
-            .networks a img{
+            .networksLinks a img{
                 width: 2em;
                 height: 2em;
                 border-radius: 25%;
@@ -104,13 +108,13 @@ body::before {
 
             }
 
-            .networks a:nth-child(1) img {
+            .networksLinks a:nth-child(1) img {
                 border: 1px solid #c7355b; 
             }
-            .networks a:nth-child(2) img {
+            .networksLinks a:nth-child(2) img {
                 border: 1px solid #5f04e3; 
             }
-            .networks a:nth-child(3) img {
+            .networksLinks a:nth-child(3) img {
                 border: 1px solid #0C89F7; 
             }
 
