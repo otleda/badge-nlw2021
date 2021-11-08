@@ -1,20 +1,18 @@
 const networks =  {
     github : 'otleda',
-    instagram : 'adtdev',
+    instagram : 'adtodev',
     discord : 'adtodev',
-    twitter : 'adeltooliveira'
+    twitter : 'adeltodesigner'
 }
 
 function getNetworks() {
-    for(let a of networksLinks.children ) {
+    for(let li of networksLinks.children ) {
         
-        const social = (a.getAttribute('class'))
+        const social = (li.getAttribute('class'))
 
-        a.children[0].href = `https://${social}.com/${networks[social]}`
+     li.children[0].href = `https://${social}.com/${networks[social]}`
 
-        alert( a.children[0].href )
     }
 
 }
-
 getNetworks()
