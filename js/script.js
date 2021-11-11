@@ -1,7 +1,7 @@
 const networks =  {
     github : 'otleda',
     instagram : 'adtodev',
-    discord : 'adtodev',
+    discord : 'channels/adtodev',
     twitter : 'adeltodesigner'
 }
 

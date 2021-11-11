@@ -22,10 +22,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #121214;
     width: 100%;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
+    background: #121214 url(./assets/png/blocos.png) 100% 100% no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    overflow: hidden;
 }
 
 /* Efect light circle pink */
@@ -53,21 +56,35 @@ body::before {
         width: 50px;
         height: 100px;
         background-color: #FF3D6E;
-        bottom: 40px;
+        bottom: 70px;
     }
     .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width:358px;
-    height: 540px;
-    border-radius: 1em;
-    background-color: #202024;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:358px;
+        height: 540px;
+        border-radius: 1em;
+        background: url(/assets/png/exagonoback.png) #202024 5rem 15rem no-repeat;
+        background-size: cover;
+        border: 1px solid #282828;
+        box-shadow: 2px 4px 7px #060606;
     }
+    .card .exagono {
+        position: absolute;
+        width: 356px;
+        height: 230px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        clip-path: polygon(0% 0%, 0% 0%, 190% 0%, 50% 100%, 0% 65%, 0% 0%);
+        background: linear-gradient(139.48deg, #FF3372 1.85%, #FEAD2E 60.19%);
+    }
+    
 
     main.card p {
         padding: 0 5em;
         font-style: oblique;
+        
     }
     
         .persona {
@@ -75,6 +92,7 @@ body::before {
             flex-direction: column;
             align-items: center;
             text-align: center;
+            z-index: 1;
         }
             img.avatar {
                 width: 50%;
@@ -107,22 +125,16 @@ body::before {
                 padding: .2em;
             }
             .networksLinks a img{
-                width: 2em;
-                height: 2em;
+                width: 2.5em;
+                height: 2.5em;
                 border-radius: 25%;
-                padding: 5px;
+                padding: 6px;
+                box-shadow: 2px 2px 1px 0px rgba(32 32 36,.9);
+                border: 1px solid #FFC323;
+                background-color: #FFC323;
 
             }
 
-            .networksLinks a:nth-child(1) img {
-                border: 1px solid #c7355b; 
-            }
-            .networksLinks a:nth-child(2) img {
-                border: 1px solid #5f04e3; 
-            }
-            .networksLinks a:nth-child(3) img {
-                border: 1px solid #0C89F7; 
-            }
-
+          
 
         
