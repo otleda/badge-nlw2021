@@ -55,9 +55,10 @@ body::before {
         position: relative;
         width: 50px;
         height: 100px;
-        background-color: #FF3D6E;
         bottom: 70px;
+        background: linear-gradient(352deg, #FF3372 11.85%, #FEAD2E 154.19%);
     }
+
     .card {
         display: flex;
         flex-direction: column;
@@ -124,17 +125,19 @@ body::before {
             .networksLinks a {
                 padding: .2em;
             }
-            .networksLinks a img{
+            .networksLinks a svg {
                 width: 2.5em;
                 height: 2.5em;
                 border-radius: 25%;
                 padding: 6px;
                 box-shadow: 2px 2px 1px 0px rgba(32 32 36,.9);
-                border: 1px solid #FFC323;
-                background-color: #FFC323;
-
             }
 
-          
-
-        
+            
+            use {
+                fill:rgba(255, 199, 57, .58);
+                transition: .5ms ease;
+            }
+            use:hover {
+                fill:rgb(255, 199, 57);
+            }
