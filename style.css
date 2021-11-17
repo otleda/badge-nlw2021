@@ -4,19 +4,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
 }
+
 h1 { font-size: 1.5em; font-weight: bold; }
 h3 { font-size: 1em; font-style: oblique; }
 p  { font-size: .8em; }
 
-h1, h3, p, a{ color: #C4C4CC; }
+h1, h3, p, a {
+     color: #C4C4CC;  
+     padding: .3em; 
+    }
 
 img { width: 50px;}
 
-li {
-    list-style: none;
-}
+li { list-style: none }
 
 body {
     display: flex;
@@ -51,112 +52,110 @@ body::before {
     left: 50%;
     background: radial-gradient(50% 50% at 50% 50%, #FFC323 0%, rgba(18, 18, 20, 0) 100%);
 }
-    .cord {
-        position: relative;
-        width: 50px;
-        height: 100px;
-        bottom: 70px;
-        border-bottom-right-radius: 5px;
-        border-bottom-left-radius: 5px;
-        background: linear-gradient(352deg, #FF3372 11.85%, #FEAD2E 154.19%);
-    }
-    .cord:before {
-            position: absolute;
-            content: '';
-            bottom: 0;
-            transform: translate(10px, 10px);
-            background: #202024;
-            width: 30px;
-            height: 30px;
-            border-radius: 50px;
-            box-shadow: 0px 4px 0px rgb(18 18 20 / 28%);
-    }
 
-    .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width:358px;
-        height: 540px;
-        border-radius: 2em;
-        background: url(/assets/png/exagonoback.png) #202024 5rem 15rem no-repeat;
-        background-size: cover;
-        border: 1px solid #282828;
-        box-shadow: 2px 4px 7px #060606;
-    }
-    .card .exagono {
-        position: absolute;
-        width: 356px;
-        height: 230px;
-        border-top-left-radius: 2em;
-        border-top-right-radius: 2em;
-        clip-path: polygon(0% 0%, 0% 0%, 190% 0%, 50% 100%, 0% 65%, 0% 0%);
-        background: linear-gradient(139.48deg, #FF3372 1.85%, #FEAD2E 60.19%);
-    }
-    
+.cord {
+    position: relative;
+    width: 64px;
+    height: 100px;
+    bottom: 70px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background: linear-gradient(352deg, #FF3372 11.85%, #FEAD2E 154.19%);
+}
+.cord:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    transform: translate(56%, 50%);
+    background: #202024;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 0px rgb(18 18 20 / 28%);
+}
 
-    main.card p {
-        padding: 0 5em;
-        font-style: oblique;
-        
-    }
-    
-        .persona {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            z-index: 1;
-        }
-            .stamp {
-                position: absolute;
-                width: 5.2em;
-                transform: translate(-100%, 0);
-            }
-            img.avatar {
-                width: 50%;
-                border-radius: 100%;
-            }
-           
-            h1 {
-                padding: .3em;
-            }
-            .myGithub a {
-                display: flex;
-                align-items: center;
-                text-decoration: none;
-                padding-bottom: 3em;
-            }
-            .github {
-                width: 1.2em;
-                margin-right: .5em;
-            }
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:358px;
+    height: 540px;
+    border-radius: 2em;
+    background: url(/assets/png/exagonoback.png) #202024 5rem 15rem no-repeat;
+    background-size: cover;
+    border: 1px solid #282828;
+    box-shadow: 2px 4px 7px #060606;
+}
 
-        .networksLinks {
-            display: flex;
-            align-items: center;
-            align-items: center;
-            justify-content: space-evenly;
-            padding: 2em;
-            width: 60%;
+.card .exagono {
+    position: absolute;
+    width: 356px;
+    height: 230px;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    clip-path: polygon(0% 0%, 0% 0%, 190% 0%, 50% 100%, 0% 65%, 0% 0%);
+    background: linear-gradient(139.48deg, #FF3372 1.85%, #FEAD2E 60.19%);
+}
 
-        }
-            .networksLinks a {
-                padding: .2em;
-            }
-            .networksLinks a svg {
-                width: 2.5em;
-                height: 2.5em;
-                border-radius: 25%;
-                padding: 6px;
-                background: #2e2e30
-            }
-            .networksLinks a svg:hover {
-                background: #ffc739;
-            }
+main.card p {
+    padding: 0 5em;
+    font-style: oblique;
+}
 
-            
-            use {
-                fill:#f94b65;
-            }
-          
+.persona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.stamp {
+    position: absolute;
+    width: 5.2em;
+    transform: translate(-100%, 0);
+}
+
+img.avatar {
+    width: 50%;
+    border-radius: 100%;
+}
+
+.myGithub a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-bottom: 3em;
+}
+.github {
+    width: 1.2em;
+    margin-right: .5em;
+}
+
+.networksLinks {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2em;
+    width: 60%;
+}
+.networksLinks a { 
+    padding: .2em;
+}
+
+.networksLinks a svg {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 25%;
+    padding: 6px;
+    background: #2e2e30
+}
+
+.networksLinks a svg:hover {
+    background: #ffc739;
+}
+
+use {
+    fill:#f94b65;
+}

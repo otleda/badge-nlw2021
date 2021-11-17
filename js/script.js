@@ -8,9 +8,9 @@ const networks =  {
 function getNetworks() {
     for(let li of networksLinks.children ) {
         
-        const social = (li.getAttribute('class'))
+        const socialName = (li.getAttribute('class'))
 
-     li.children[0].href = `https://${social}.com/${networks[social]}`
+     li.children[0].href = `https://${socialName}.com/${networks[socialName]}`
 
     }
 
