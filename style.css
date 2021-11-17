@@ -56,7 +56,20 @@ body::before {
         width: 50px;
         height: 100px;
         bottom: 70px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
         background: linear-gradient(352deg, #FF3372 11.85%, #FEAD2E 154.19%);
+    }
+    .cord:before {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            transform: translate(10px, 10px);
+            background: #202024;
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            box-shadow: 0px 4px 0px rgb(18 18 20 / 28%);
     }
 
     .card {
@@ -65,7 +78,7 @@ body::before {
         align-items: center;
         width:358px;
         height: 540px;
-        border-radius: 1em;
+        border-radius: 2em;
         background: url(/assets/png/exagonoback.png) #202024 5rem 15rem no-repeat;
         background-size: cover;
         border: 1px solid #282828;
@@ -75,8 +88,8 @@ body::before {
         position: absolute;
         width: 356px;
         height: 230px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        border-top-left-radius: 2em;
+        border-top-right-radius: 2em;
         clip-path: polygon(0% 0%, 0% 0%, 190% 0%, 50% 100%, 0% 65%, 0% 0%);
         background: linear-gradient(139.48deg, #FF3372 1.85%, #FEAD2E 60.19%);
     }
@@ -95,10 +108,16 @@ body::before {
             text-align: center;
             z-index: 1;
         }
+            .stamp {
+                position: absolute;
+                width: 5.2em;
+                transform: translate(-100%, 0);
+            }
             img.avatar {
                 width: 50%;
                 border-radius: 100%;
             }
+           
             h1 {
                 padding: .3em;
             }
@@ -130,14 +149,14 @@ body::before {
                 height: 2.5em;
                 border-radius: 25%;
                 padding: 6px;
-                box-shadow: 2px 2px 1px 0px rgba(32 32 36,.9);
+                background: #2e2e30
+            }
+            .networksLinks a svg:hover {
+                background: #ffc739;
             }
 
             
             use {
-                fill:rgba(255, 199, 57, .58);
-                transition: .5ms ease;
+                fill:#f94b65;
             }
-            use:hover {
-                fill:rgb(255, 199, 57);
-            }
+          
