@@ -23,7 +23,16 @@ function getGithubProfileInfos() {
 
     fetch(url)
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => {
+
+        console.log(data)
+
+        myAvatar.src = data.avatar_url
+        myName.textContent = data.name
+        myLink.href = data.html_url
+        mylogin.textContent = data.login
+        myBio.textContent = data.bio
+    })
 }
 
 getGithubProfileInfos()
