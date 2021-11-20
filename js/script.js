@@ -10,9 +10,20 @@ function getNetworks() {
         
         const socialName = (li.getAttribute('class'))
 
-     li.children[0].href = `https://${socialName}.com/${networks[socialName]}`
+        li.children[0].href = `https://${socialName}.com/${networks[socialName]}`
 
     }
 
 }
 getNetworks()
+
+function getGithubProfileInfos() {
+
+    const url = `https://api.github.com/users/${networks.github}`
+
+    fetch(url)
+    .then(response => response.json())
+    .then(data => console.log(data))
+}
+
+getGithubProfileInfos()
